@@ -155,7 +155,7 @@ if ( ! function_exists( 'patterns_docs_install_plugin' ) ) {
 						/* translators: %1$s is the plugin name, %2$s is error message */
 						esc_html__( 'Error retrieving information for plugin "%1$s": %2$s', 'patterns-docs' ),
 						esc_html( $name ),
-						esc_html( $result->get_error_message() )
+						esc_html( $api->get_error_message() )
 					),
 				);
 			}
@@ -394,7 +394,7 @@ if ( ! function_exists( 'patterns_docs_default_user_meta' ) ) :
 	function patterns_docs_default_user_meta() {
 		$default_user_meta = array(
 			'remove_review_notice_permanently'         => false,
-			'remove_review_notice_temporary_date_time' => time(),
+			'remove_review_notice_temporary_date_time' => 0,
 		);
 
 		return apply_filters( 'patterns_docs_default_user_meta', $default_user_meta );
