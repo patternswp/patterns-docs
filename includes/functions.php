@@ -468,7 +468,7 @@ if ( ! function_exists( 'patterns_docs_file_system' ) ) {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return string|WP_Error directory path or WP_Error object if no permission
+	 * @return WP_Filesystem Initialized WordPress filesystem object.
 	 *
 	 * @author     codersantosh <codersantosh@gmail.com>
 	 */
