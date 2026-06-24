@@ -51,7 +51,7 @@ input[type='submit'] {
 	#{$varPrefix}-bg-cl: var(--wp--preset--color--primary);
 	#{$varPrefix}-bdr-cl: var(--wp--preset--color--primary);
 	#{$varPrefix}-bdr-sty: solid;
-	#{$varPrefix}-bdr-w: solid;
+	#{$varPrefix}-bdr-w: 1px;
 	#{$varPrefix}-cl: var(--wp--preset--color--default);
 	#{$varPrefix}-cur: pointer;
 
@@ -117,7 +117,6 @@ p {
 
 // Ordered List
 ol {
-	list-style-position: inside;
 
 	li {
 		ul,
@@ -130,7 +129,6 @@ ol {
 
 //Unordered List
 ul {
-	list-style-position: inside;
 	#{$varPrefix}-m: 0;
 	#{$varPrefix}-p: 0;
 	margin: var(#{$varPrefix}-m);
